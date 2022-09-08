@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+       <h1 id="title">Developer Registration</h1>
+       <h2 id="subtitle">Fill your information</h2>
+    </header>
+    <form action="" method="POST" enctype="multipart/form-data" class="form">
+        <fieldset class="group">
+            <legend>Personal info</legend>
+            <div class="flexColumn">
+                <div class="flexRow">
+                    <label class="field">
+                        Name:
+                        <br>
+                        <input type="text" name="name" autofocus required>
+                    </label>
+                    <label class="field">
+                        Last Name:
+                        <br>
+                        <input type="text" name="lastname" required>
+                    </label>
+                </div>
+
+                <label>
+                    Date of Birth:
+                    <br>
+                    <input type="date" name="dateofbirth" required>
+                </label>   
+
+                <div class="flexRow">
+                    <label>
+                        E-mail:
+                        <input type="email" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" placeholder="your@email.com" required>
+                    </label>
+    
+                    <label>
+                        Phone:
+                        <input type="tel" name="phone">
+                    </label>
+                </div> 
+
+            </div>
+        </fieldset>
+
+        <fieldset class="group">
+            <legend>Professional info</legend>
+            <div class="flexColumn">
+                <label class="stack">
+                    Stack:
+                    <br>
+                    <div class="flexRow">                      
+                        <input type="radio" name="stack" id="front" value="front">
+                        <label for="front">Front-End</label>
+                        <input type="radio" name="stack" id="back" value="back">
+                        <label for="back">Back-End</label>
+                        <input type="radio" name="stack" id="full" value="full">
+                        <label for="full">Fullstack</label>
+                    </div>
+                </label>    
+
+                <label>
+                    Seniority:
+                    <br>
+                    <select name="seniority">
+                        <option value="jr">Junior Developer</option>
+                        <option value="dev">Developer</option>
+                        <option value="sr">Senior Developer</option>
+                    </select>
+                </label>                
+                
+                <label>
+                    Known Technologies:
+                    <br>
+                    <div id="technologies">
+                        <input type="checkbox" name="html" id="html">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="css" id="css">
+                        <label for="css">CSS</label>
+                        <input type="checkbox" name="javascript" id="javascript">
+                        <label for="javascript">Javascript</label>
+                        <input type="checkbox" name="python" id="python">
+                        <label for="python">Python</label>
+                        <input type="checkbox" name="csharp" id="csharp">
+                        <label for="csharp">C#</label>
+                        <input type="checkbox" name="php" id="php">
+                        <label for="php">PHP</label>
+                        <input type="checkbox" name="java" id="java">
+                        <label for="java">Java</label>
+                    </div>
+                </label>              
+
+                <div class="flexRow">
+                    <label>
+                        Links:
+                        <input type="url" name="github" placeholder="Git Hub">
+                        <input type="url" name="linkedin" placeholder="LinkedIn">
+                    </label>                
+                </div>
+
+                <Label>
+                    CV:
+                    <input type="file" name="cv" accept="application/pdf" class="cv"/>
+                </Label>
+            </div>
+        </fieldset>
+
+        <fieldset class="group">
+            <legend>More about you</legend>
+            <textarea name="moreabout" cols="100" rows="10" placeholder="Optional"></textarea> 
+        </fieldset>
+
+        <input type="submit" value="Submit" class="button">
+    </form>
+</body>
+</html>

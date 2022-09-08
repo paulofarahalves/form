@@ -1,0 +1,129 @@
+* {
+    font-family: Calibri;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #bcfdfd;
+    margin-bottom: 10px;
+}
+
+header {
+    width: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #5a0ba5;
+}
+
+#subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.form {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input {
+    height: 20px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-radius: 3px;
+    padding-left: 3px;
+}
+
+input, select, textarea {
+    background-color: #f1f1f1;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.stack {
+    margin-bottom: 0;
+}
+
+.stack label,
+.stack input {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10;
+}
+
+label {
+    margin: 10px
+}
+
+fieldset {
+    width: 540px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: #5a0ba5;
+    border-width: 3px;
+}
+
+fieldset legend {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cv {
+    background-color: #bcfdfd;
+}
+
+textarea {
+    margin: 5px 10px 10px 10px;
+    max-width: 585px;
+    width: 100%;    
+    resize: none;
+    border-radius: 5px;
+    padding-left: 3px;
+}
+
+.button {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    padding: 0;
+    color: white;
+    background-color: #5a0ba5;
+}
+
+.button:hover {
+    background-color: #894fc0
+}
+
+@media (max-width:570px) {
+    .group{
+        width: 90%;
+    }
+}
